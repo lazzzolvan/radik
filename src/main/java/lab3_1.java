@@ -11,14 +11,11 @@ public class lab3_1 {
         abiturients[0] = new Abiturient(1, "Lazarev", "Ilya", "Sergeevich", "Ryazan", "89155996021", markCurrentAbi);
         markCurrentAbi = changeMarkAbi(scanner);
         abiturients[1] = new Abiturient(2, "Senkin", "Sergey", "Sergeevich", markCurrentAbi);
-        markCurrentAbi = changeMarkAbi(scanner);
-        abiturients[2] = new Abiturient(3, "Larin", "Anton", "Sergeevich", "Ряжск", "89155996021", markCurrentAbi);
-        markCurrentAbi = changeMarkAbi(scanner);
-        abiturients[3] = new Abiturient(4, "Мелехин", "Денис", "Егвеньевич", "Ryazan", "89155996021", markCurrentAbi);
-        /*  for (int i = 2; i < abiturients.length; i++) {
+
+          for (int i = 2; i < abiturients.length; i++) {
             abiturients[i] = new Abiturient();
             abiturients[i].setAbiturient(abiturients[i]);
-        }*/
+        }
         System.out.println("Список абитуриентов имеющих не удовлетворительные оценки: ");
         for (int i = 0; i < abiturients.length; i++) {
             if (abiturients[i].findUnsatisfactoryMark(abiturients[i]).equals("")) {

@@ -11,17 +11,9 @@ public class Abiturient {
      String addres;
      String phone;
      int[] mark = new int[5];
-    {
-        this.id = 0;
-        this.lastName = "Unindintify";
-        this.firstName = "Unindintify";
-        this.surName = "Unindintify";
-        this.addres = "Unindintify";
-        this.phone = "Unindintify";
-    }
+
 
     public Abiturient (){
-this.id = 2;
     }
 
 
@@ -49,7 +41,6 @@ this.id = 2;
     }
 
     public Abiturient setAbiturient(Abiturient abiturients){
-            abiturients = new Abiturient();
             System.out.println("Введите id");
             abiturients.id = scanner.nextInt();
             System.out.println("Введите фамилию:");
